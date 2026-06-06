@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatorHub</title>
+
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">
+            <div class="logo-icon">CH</div>
+            <div class="logo-text">CreatorHub</div>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+         <button class="nav-btn">Let's Work</button>
+    </header>
+    <!-- Hero -->
+    <section class="hero" id="home">
+
+        <div class="hero-left">
+
+            <div class="tag">
+                ⚡ We Create. You Grow.
+            </div>
+
+            <h1>
+                Premium Digital
+                <span>Services</span>
+            </h1>
+
+            <p>
+                Professional Video Editing, Thumbnail Design and
+                Modern Website Development for Creators & Businesses.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-btn">
+                    Explore Services
+                </button>
+
+                <button class="secondary-btn" onclick="viewWork()">
+    View Work
+</button>
+            </div>
+
+            <div class="stats">
+
+                <div class="stat-box">
+                    <h3>300+</h3>
+                    <p>Projects</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>150+</h3>
+                    <p>Clients</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>4.9★</h3>
+                    <p>Rating</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+    <div class="floating-cube"></div>
+    <div class="floating-cube cube2"></div>
+
+    <div class="hero-brand">
+        <h2>CreatorHub</h2>
+        <span>Creative Studio</span>
+    </div>
+
+</div>
+
+        </div>
+
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+
+        <div class="section-title">
+            <h2>Our Services</h2>
+            <p>What we offer</p>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <i class="fas fa-video"></i>
+
+                <h3>Video Editing</h3>
+
+                <p>
+                    Cinematic edits, YouTube videos,
+                    reels and shorts, Thumbnail Design.
+                </p>
+
+                <button onclick="selectService('Video Editing')">
+                    Select Service
+                </button>
+            </div>
+
+          
+            <div class="service-card">
+                <i class="fas fa-code"></i>
+
+                <h3>Web Design</h3>
+
+                <p>
+                    Modern responsive websites
+                    for businesses.
+                </p>
+
+                <button onclick="selectService('Web Design')">
+                    Select Service
+                </button>
+            </div>
+
+            <section id="portfolio">
+
+    <div class="section-title">
+        <h2>Our Portfolio</h2>
+        <p>Recent Work & Projects</p>
+    </div>
+
+    <div class="portfolio-grid">
+
+        <div class="portfolio-card">
+            <img src="images/project1.jpg" alt="Video Editing">
+            <div class="portfolio-info">
+                <h3>Video Editing & Photography</h3>
+                <p>Cinematic YouTube Edit</p>
+            </div>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="images/project2.jpg" alt="Thumbnail Design">
+            <div class="portfolio-info">
+                <h3>Thumbnail Design</h3>
+                <p>High CTR Thumbnail</p>
+            </div>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="images/project3.jpg" alt="Website Design">
+            <div class="portfolio-info">
+                <h3>Web Design</h3>
+                <p>Business Website</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+        </div>
+
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+
+        <div class="section-title">
+            <h2>Video Editing Plans</h2>
+            <p>Choose your plan</p>
+        </div>
+
+        <div class="pricing-grid">
+
+            <div class="price-card">
+
+                <h3>Basic</h3>
+
+                <div class="price">₹49</div>
+
+                <ul>
+                    <li>1 Video Edit</li>
+                    <li>1 Shorts Edits</li>
+                    <li>1 Reels Edits</li>
+                    <li>1 Thumbnail</li>
+                    
+                </ul>
+
+                <button onclick="selectPlan('Basic ₹49')">
+                    Choose Plan
+                </button>
+
+            </div>
+
+            <div class="price-card featured">
+
+                <div class="popular">
+                    MOST POPULAR
+                </div>
+
+                <h3>Pro</h3>
+
+                <div class="price">₹499</div>
+
+                <ul>
+                    <li>3 Videos Edits</li>
+                    <li>3 Shorts Edits</li>
+                    <li>3 Reels Edits</li>
+                    <li>3 Thumbnails</li>
+                   
+                </ul>
+
+                <button onclick="selectPlan('Pro ₹499')">
+                    Choose Plan
+                </button>
+
+            </div>
+
+            <div class="price-card">
+
+                <h3>Premium</h3>
+
+                <div class="price">₹999</div>
+
+                <ul>
+                    <li>Premium Editing</li>
+                     <li>3 Videos Edits</li>
+                    <li>10 Shorts Edits</li>
+                    <li>10 Reels Edits</li>
+                    <li>Priority Support</li>
+                    <li>Website Setup</li>
+                </ul>
+
+                <button onclick="selectPlan('Premium ₹999')">
+                    Choose Plan
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <div class="contact-container">
+
+            <div class="selection-box">
+
+                <div class="selected-card">
+                    <h4>Selected Service</h4>
+                    <p id="serviceSlot">None</p>
+                </div>
+
+                <div class="selected-card">
+                    <h4>Selected Plan</h4>
+                    <p id="planSlot">None</p>
+                </div>
+
+            </div>
+
+            <form onsubmit="submitForm(event)">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    placeholder="WhatsApp Number"
+                    required
+                >
+
+                <textarea
+                    id="msgBox"
+                    placeholder="Your Requirement"
+                    rows="5"
+                ></textarea>
+
+                <button type="submit" class="submit-btn">
+                    Send Request
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 CreatorHub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
